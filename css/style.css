@@ -6,9 +6,15 @@
     list-style: none;
     
 }
+:root{
+    --black: #000;
+    --white: #fff;
+    --red: #ff4d4d;
+}
 
 body{
     overflow-x: hidden;
+    background-color: var(--black);
 
 }
 
@@ -75,7 +81,6 @@ ul{
     align-items: center;
     height: 80px;
     padding: 0 40px;
-    background-color: red;
 }
 
 header ul{
@@ -83,4 +88,39 @@ header ul{
     justify-content: space-between;
     align-items: center;
     gap: 20px
+}
+
+.search-anime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap : 1rem;
+}
+
+.input-search{
+     padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: auto;
+    color: #bbb;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+}
+
+.card-anime{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));    
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap : 1rem;
+    background-color: var(--black);
+    color: var(--white);
 }
